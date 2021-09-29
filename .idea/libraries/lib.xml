@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/h2/src/java10/src" />
+      <root url="file://$PROJECT_DIR$/lib/h2/src/java8/src" />
+      <root url="file://$PROJECT_DIR$/lib/h2/src/java9/src" />
+      <root url="file://$PROJECT_DIR$/lib/h2/src/main" />
+      <root url="file://$PROJECT_DIR$/lib/h2/src/test" />
+      <root url="file://$PROJECT_DIR$/lib/h2/src/tools" />
+      <root url="file://$PROJECT_DIR$/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>
