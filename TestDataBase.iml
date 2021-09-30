@@ -15,6 +15,11 @@
     <orderEntry type="library" name="h2-1.4.200" level="project" />
     <orderEntry type="library" scope="TEST" name="lib" level="project" />
     <orderEntry type="library" name="h2-1.4.200 (2)" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.0-alpha5" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:2.0.0-alpha5" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.14.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.26" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.11.4" level="project" />
   </component>

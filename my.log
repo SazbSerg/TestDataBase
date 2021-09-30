@@ -1,0 +1,44 @@
+00:10:39,455  INFO CustomerDAOJDBC:28 - Я ЛОГЕРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР
+00:12:33,454  INFO CustomerDAOJDBC:28 - Я ЛОГЕРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР
+00:49:10,574  INFO JDBCRunner:19 - Вывод в консоль информации о всех покупателях
+00:49:11,710  INFO JDBCRunner:20 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='Тимофей', surname='Дорн', phoneNumber=508777667, eMail='вываыва', login='рйдлломдо', password='36767634м', cartNumber=24, adress='Львов'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=8, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+00:49:11,711  INFO JDBCRunner:21 - --------------------------------------------------
+01:14:09,583  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+01:14:09,627  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='Тимофей', surname='Дорн', phoneNumber=508777667, eMail='вываыва', login='рйдлломдо', password='36767634м', cartNumber=24, adress='Львов'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=8, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+01:14:09,715  INFO CustomerDAOJDBC:77 - Вывод покупателя по заданному ID
+01:14:09,716  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+01:14:09,799  INFO CustomerDAOJDBC:105 - Добавлен покупатель
+01:14:09,878  INFO CustomerDAOJDBC:132 - Данные покупателя обновлены/изменены.
+01:14:09,924  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+01:14:09,924  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=8, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+01:14:09,975  INFO CustomerDAOJDBC:147 - Запись успешно удалена
+01:14:10,021  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+01:14:10,022  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]

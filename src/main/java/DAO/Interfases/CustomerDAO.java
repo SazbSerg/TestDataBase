@@ -13,10 +13,7 @@ public interface CustomerDAO {
 
     public void addCustomer(Customer customer);
 
-    public  void  update(int id, String nameToUpdate, String surnameToUpdate, int phoneNumberToUpdate,
-                         String eMailToUpdate, String loginToUpdate,
-                         String passwordToUpdate, int cardNumberToUpdate,
-                         String adressToUpdate) throws SQLException;
+    public  void  update(Customer customer) throws SQLException;
 
     public  void  remove(int id) throws SQLException;
 

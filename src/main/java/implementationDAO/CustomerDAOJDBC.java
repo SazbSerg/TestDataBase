@@ -2,13 +2,17 @@ package implementationDAO;
 
 import DAO.DataBaseClasses.Customer;
 import DAO.Interfases.CustomerDAO;
-import util.ConnectionManager;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import util.ConnectionManager;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class CustomerDAOJDBC implements CustomerDAO {
+    Logger logger = LoggerFactory.getLogger("CustomerDAOJDBC");
 
     @Override
     public List<Customer> getAllCustomer() throws SQLException {
@@ -19,6 +23,7 @@ public class CustomerDAOJDBC implements CustomerDAO {
 
         try (Connection connection = ConnectionManager.open();
              Statement statement = connection.createStatement();
+
              ResultSet resaltSet = statement.executeQuery(sql)) {
 
             while (resaltSet.next()) {
@@ -36,8 +41,10 @@ public class CustomerDAOJDBC implements CustomerDAO {
             }
 
         } catch (SQLException e) {
+            logger.info("Ошибка в методе getAllCustomer()");
             e.printStackTrace();
         }
+        logger.info("Вывод в консоль информации о всех покупателях");
         return list;
     }
 
@@ -67,6 +74,7 @@ public class CustomerDAOJDBC implements CustomerDAO {
                 customer.setAdress(resultSet.getString("adress"));
             }
         }
+        logger.info("Вывод покупателя по заданному ID");
         return customer;
     }
 
@@ -94,33 +102,19 @@ public class CustomerDAOJDBC implements CustomerDAO {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        logger.info("Добавлен покупатель");
     }
 
     @Override
-    public void update(int id, String nameToUpdate, String surnameToUpdate, int phoneNumberToUpdate, String eMailToUpdate, String loginToUpdate,
-                       String passwordToUpdate, int cardNumberToUpdate, String adressToUpdate) throws SQLException {
+    public void update(Customer customer) throws SQLException {
 
-         CustomerDAOJDBC customerDAOJDBC = new CustomerDAOJDBC();
-         Customer customer = customerDAOJDBC.getCustomerForID(id);
-         customer.setId(id);
-         customer.setName(nameToUpdate);
-         customer.setSurname(surnameToUpdate);
-         customer.setPhoneNumber(phoneNumberToUpdate);
-         customer.seteMail(eMailToUpdate);
-         customer.setLogin(loginToUpdate);
-         customer.setPassword(passwordToUpdate);
-         customer.setCartNumber(cardNumberToUpdate);
-         customer.setAdress(adressToUpdate);
+        String sql = """
+                update customer set id_customer = ?, customer_name = ?, customer_surname = ? , phone_number = ?, e_mail = ?, login = ?,
+                password = ?, card_number = ?, adress = ? where id_customer = ?;
+                """;
 
-
-         String sql = """
-                 update customer set id_customer = ?, customer_name = ?, customer_surname = ? , phone_number = ?, e_mail = ?, login = ?,
-                 password = ?, card_number = ?, adress = ? where id_customer = ?;
-                 """;
-
-         try (Connection connection = ConnectionManager.open();
-              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-             //preparedStatement.setInt(1, customer.getId());
+        try (Connection connection = ConnectionManager.open();
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setInt(1, customer.getId());
             preparedStatement.setString(2, customer.getName());
             preparedStatement.setString(3, customer.getSurname());
@@ -130,11 +124,12 @@ public class CustomerDAOJDBC implements CustomerDAO {
             preparedStatement.setString(7, customer.getPassword());
             preparedStatement.setInt(8, customer.getCartNumber());
             preparedStatement.setString(9, customer.getAdress());
-             preparedStatement.setInt(10, customer.getId());
+            preparedStatement.setInt(10, customer.getId());
 
-             preparedStatement.executeUpdate();
+            preparedStatement.executeUpdate();
 
-         }
+        }
+        logger.info("Данные покупателя обновлены/изменены.");
     }
 
     @Override
@@ -149,6 +144,6 @@ public class CustomerDAOJDBC implements CustomerDAO {
             preparedStatement.execute();
         }
 
-
+        logger.info("Запись успешно удалена");
     }
 }
