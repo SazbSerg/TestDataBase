@@ -4,12 +4,22 @@ public class Products {
     private int id;
     private String title;
     private String description;
-    private long price;
+    private double price;
     private int stockBalance;
-    private String imageId;
+    private int imageId;
     private String category;
 
     public Products() {
+    }
+
+    public Products(int id, String title, String description, double price, int stockBalance, int imageId, String category) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.stockBalance = stockBalance;
+        this.imageId = imageId;
+        this.category = category;
     }
 
     public int getId() {
@@ -36,11 +46,11 @@ public class Products {
         this.description = description;
     }
 
-    public long getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(long price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -52,11 +62,11 @@ public class Products {
         this.stockBalance = stockBalance;
     }
 
-    public String getImageId() {
+    public int getImageId() {
         return imageId;
     }
 
-    public void setImageId(String imageId) {
+    public void setImageId(int imageId) {
         this.imageId = imageId;
     }
 
@@ -66,5 +76,19 @@ public class Products {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    @Override
+    public String
+    toString() {
+        return "Products{" +
+               "id=" + id +
+               ", title='" + title + '\'' +
+               ", description='" + description + '\'' +
+               ", price=" + price +
+               ", stockBalance=" + stockBalance +
+               ", imageId=" + imageId +
+               ", category='" + category + '\'' +
+               '}';
     }
 }

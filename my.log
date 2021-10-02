@@ -42,3 +42,48 @@
 , Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 , Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 ]
+10:02:23,379  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:24,903  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+10:02:24,948  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+10:02:24,954  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,048  INFO CustomerDAOJDBC:77 - Вывод покупателя по заданному ID
+10:02:25,056  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+10:02:25,057  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,133  INFO CustomerDAOJDBC:105 - Добавлен покупатель
+10:02:25,134  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,205  INFO CustomerDAOJDBC:132 - Данные покупателя обновлены/изменены.
+10:02:25,205  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,271  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+10:02:25,272  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+10:02:25,273  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,318  INFO CustomerDAOJDBC:147 - Запись успешно удалена
+10:02:25,318  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
+10:02:25,355  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+10:02:25,355  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+23:30:36,288  INFO CustomerDAOJDBC:39 - Вывод в консоль информации о всех способах оплаты
+23:30:36,293  INFO JDBCRunner:40 - [DAO.DataBaseClasses.Payment@3a6bb9bf, DAO.DataBaseClasses.Payment@34f7cfd9, DAO.DataBaseClasses.Payment@65f095f8, DAO.DataBaseClasses.Payment@59af0466]
+23:31:51,717  INFO CustomerDAOJDBC:39 - Вывод в консоль информации о всех способах оплаты
+23:31:51,720  INFO JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
+23:33:07,946  INFO CustomerDAOJDBC:28 - Соединение с базой данных успешно создано.
+23:33:07,953  INFO CustomerDAOJDBC:40 - Вывод в консоль информации о всех способах оплаты
+23:33:07,954  INFO JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]

@@ -18,9 +18,11 @@ public final class ConnectionManager {
     }
     public static Connection open(){
         try {
+
             return DriverManager.getConnection(PropertiesUtil.get(URL_KEY),
                     PropertiesUtil.get(USERNAME_KEY),
                     PropertiesUtil.get(PASSWORD_KEY));
+
 
 
         } catch (SQLException e) {

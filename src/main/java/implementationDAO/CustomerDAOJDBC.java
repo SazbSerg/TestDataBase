@@ -59,8 +59,9 @@ public class CustomerDAOJDBC implements CustomerDAO {
 
         try (Connection connection = ConnectionManager.open();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
-            preparedStatement.setInt(1, x);
-            ResultSet resultSet = preparedStatement.executeQuery();
+             logger.info("Соединение с базой данных успешно создано.");
+             preparedStatement.setInt(1, x);
+             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
                 customer.setId(resultSet.getInt("id_customer"));
@@ -88,6 +89,7 @@ public class CustomerDAOJDBC implements CustomerDAO {
                 """;
         try (Connection connection = ConnectionManager.open();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            logger.info("Соединение с базой данных успешно создано.");
             preparedStatement.setInt(1, customer.getId());
             preparedStatement.setString(2, customer.getName());
             preparedStatement.setString(3, customer.getSurname());
@@ -115,6 +117,7 @@ public class CustomerDAOJDBC implements CustomerDAO {
 
         try (Connection connection = ConnectionManager.open();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            logger.info("Соединение с базой данных успешно создано.");
             preparedStatement.setInt(1, customer.getId());
             preparedStatement.setString(2, customer.getName());
             preparedStatement.setString(3, customer.getSurname());
@@ -140,6 +143,7 @@ public class CustomerDAOJDBC implements CustomerDAO {
 
         try (Connection connection = ConnectionManager.open();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            logger.info("Соединение с базой данных успешно создано.");
             preparedStatement.setInt(1, id);
             preparedStatement.execute();
         }
