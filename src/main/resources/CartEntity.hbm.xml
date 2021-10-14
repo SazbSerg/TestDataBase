@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Hibernate.TestPackage.CartEntity" table="cart" schema="mydb">
+        <composite-id mapped="true" class="Hibernate.TestPackage.CartEntityPK">
+            <key-property name="idOrder">
+                <column name="id_order" sql-type="int"/>
+            </key-property>
+            <key-property name="idProduct">
+                <column name="id_product" sql-type="int"/>
+            </key-property>
+        </composite-id>
+        <property name="count">
+            <column name="count" sql-type="int"/>
+        </property>
+        <many-to-one name="productsByIdOrder" class="Hibernate.TestPackage.ProductsEntity">
+            <column name="id_order"/>
+        </many-to-one>
+        <many-to-one name="ordersByIdOrder" class="Hibernate.TestPackage.OrdersEntity">
+            <column name="id_order"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

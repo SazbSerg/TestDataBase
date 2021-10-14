@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Hibernate.TestPackage.ProductsEntity" table="products" schema="mydb">
+        <id name="id">
+            <column name="id" sql-type="int"/>
+        </id>
+        <property name="title">
+            <column name="title" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="description">
+            <column name="description" sql-type="text"/>
+        </property>
+        <property name="productPrice">
+            <column name="product_price" sql-type="double" precision="-1"/>
+        </property>
+        <property name="productStockBalance">
+            <column name="product_stock_balance" sql-type="int"/>
+        </property>
+        <property name="imageId">
+            <column name="image_id" sql-type="int" not-null="true"/>
+        </property>
+        <property name="category">
+            <column name="category" sql-type="varchar(100)" length="100"/>
+        </property>
+        <many-to-one name="imagesByImageId" class="Hibernate.TestPackage.ImagesEntity">
+            <column name="image_id" not-null="true"/>
+        </many-to-one>
+        <set name="cartsById" inverse="true">
+            <key>
+                <column name="id_order"/>
+            </key>
+            <one-to-many not-found="ignore" class="Hibernate.TestPackage.CartEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

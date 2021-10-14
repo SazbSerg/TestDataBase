@@ -6,7 +6,7 @@ Build-Jdk: ${buildJdk}
 Created-By: ${createdBy}
 Main-Class: org.h2.tools.Console
 Automatic-Module-Name: com.h2database
-Bundle-Activator: org.h2.util.DbDriverActivator
+Bundle-Activator: org.h2.JDBC.JDBCutil.DbDriverActivator
 Bundle-ManifestVersion: 2
 Bundle-Name: H2 Database Engine
 Bundle-SymbolicName: com.h2database
@@ -48,7 +48,7 @@ Import-Package: javax.crypto,
  org.apache.lucene.queryparser;version="[5.5.5,9.0.0)";resolution:=optional,
  org.apache.lucene.search;version="[5.5.5,9.0.0)";resolution:=optional,
  org.apache.lucene.store;version="[5.5.5,9.0.0)";resolution:=optional,
- org.apache.lucene.util;version="[5.5.5,9.0.0)";resolution:=optional,
+ org.apache.lucene.JDBC.JDBCutil;version="[5.5.5,9.0.0)";resolution:=optional,
  org.locationtech.jts.geom;version="1.15.0";resolution:=optional,
  org.locationtech.jts.io;version="1.15.0";resolution:=optional,
  org.osgi.framework;version="1.5",
@@ -61,7 +61,7 @@ Export-Package: org.h2;version="${version}",
  org.h2.jdbc;version="${version}",
  org.h2.jdbcx;version="${version}",
  org.h2.tools;version="${version}",
- org.h2.util;version="${version}",
+ org.h2.JDBC.JDBCutil;version="${version}",
  org.h2.value;version="${version}",
  org.h2.bnf;version="${version}",
  org.h2.bnf.context;version="${version}",

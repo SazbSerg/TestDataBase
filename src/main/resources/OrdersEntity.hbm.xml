@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Hibernate.TestPackage.OrdersEntity" table="orders" schema="mydb">
+        <id name="id">
+            <column name="id" sql-type="int"/>
+        </id>
+        <property name="deviveryMethod">
+            <column name="devivery_method" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="paymentMethod">
+            <column name="payment_method" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="idCustomer">
+            <column name="id_customer" sql-type="int"/>
+        </property>
+        <many-to-one name="deliveryByDeviveryMethod" class="Hibernate.TestPackage.DeliveryEntity">
+            <column name="devivery_method"/>
+        </many-to-one>
+        <many-to-one name="paymentByPaymentMethod" class="Hibernate.TestPackage.PaymentEntity">
+            <column name="payment_method"/>
+        </many-to-one>
+        <many-to-one name="customerByIdCustomer" class="Hibernate.TestPackage.CustomerEntity">
+            <column name="id_customer"/>
+        </many-to-one>
+        <set name="cartsById" inverse="true">
+            <key>
+                <column name="id_order"/>
+            </key>
+            <one-to-many not-found="ignore" class="Hibernate.TestPackage.CartEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

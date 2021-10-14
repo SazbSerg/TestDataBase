@@ -160,7 +160,7 @@ It is used as default storage subsystem of H2,
 but it can also be used directly within an application, without using JDBC or SQL.
 </p>
 <ul><li>MVStore stands for "multi-version store".
-</li><li>Each store contains a number of maps that can be accessed using the <code>java.util.Map</code> interface.
+</li><li>Each store contains a number of maps that can be accessed using the <code>java.JDBC.JDBCutil.Map</code> interface.
 </li><li>Both file-based persistence and in-memory operation are supported.
 </li><li>It is intended to be fast, simple to use, and small.
 </li><li>Concurrent read and write operations are supported.
@@ -344,7 +344,7 @@ For common use cases, the storage overhead of this utility is very small compare
 <h3 id="inMemory">In-Memory Performance and Usage</h3>
 <p>
 Performance of in-memory operations is about 50% slower than
-<code>java.util.TreeMap</code>.
+<code>java.JDBC.JDBCutil.TreeMap</code>.
 </p><p>
 The memory overhead for large maps is slightly better than for the regular
 map implementations, but there is a higher overhead per map.

@@ -1,7 +1,7 @@
 00:10:39,455  INFO CustomerDAOJDBC:28 - Я ЛОГЕРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР
 00:12:33,454  INFO CustomerDAOJDBC:28 - Я ЛОГЕРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРРР
-00:49:10,574  INFO JDBCRunner:19 - Вывод в консоль информации о всех покупателях
-00:49:11,710  INFO JDBCRunner:20 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+00:49:10,574  INFO JDBC.JDBCutil.JDBCRunner:19 - Вывод в консоль информации о всех покупателях
+00:49:11,710  INFO JDBC.JDBCutil.JDBCRunner:20 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='Тимофей', surname='Дорн', phoneNumber=508777667, eMail='вываыва', login='рйдлломдо', password='36767634м', cartNumber=24, adress='Львов'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -9,9 +9,9 @@
 , Customer{id=7, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 , Customer{id=8, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 ]
-00:49:11,711  INFO JDBCRunner:21 - --------------------------------------------------
+00:49:11,711  INFO JDBC.JDBCutil.JDBCRunner:21 - --------------------------------------------------
 01:14:09,583  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-01:14:09,627  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+01:14:09,627  INFO JDBC.JDBCutil.JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='Тимофей', surname='Дорн', phoneNumber=508777667, eMail='вываыва', login='рйдлломдо', password='36767634м', cartNumber=24, adress='Львов'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -20,12 +20,12 @@
 , Customer{id=8, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 ]
 01:14:09,715  INFO CustomerDAOJDBC:77 - Вывод покупателя по заданному ID
-01:14:09,716  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+01:14:09,716  INFO JDBC.JDBCutil.JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 
 01:14:09,799  INFO CustomerDAOJDBC:105 - Добавлен покупатель
 01:14:09,878  INFO CustomerDAOJDBC:132 - Данные покупателя обновлены/изменены.
 01:14:09,924  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-01:14:09,924  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+01:14:09,924  INFO JDBC.JDBCutil.JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -35,7 +35,7 @@
 ]
 01:14:09,975  INFO CustomerDAOJDBC:147 - Запись успешно удалена
 01:14:10,021  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-01:14:10,022  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+01:14:10,022  INFO JDBC.JDBCutil.JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -44,7 +44,7 @@
 ]
 10:02:23,379  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
 10:02:24,903  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-10:02:24,948  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+10:02:24,948  INFO JDBC.JDBCutil.JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -53,7 +53,7 @@
 ]
 10:02:24,954  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
 10:02:25,048  INFO CustomerDAOJDBC:77 - Вывод покупателя по заданному ID
-10:02:25,056  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+10:02:25,056  INFO JDBC.JDBCutil.JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 
 10:02:25,057  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
 10:02:25,133  INFO CustomerDAOJDBC:105 - Добавлен покупатель
@@ -61,7 +61,7 @@
 10:02:25,205  INFO CustomerDAOJDBC:132 - Данные покупателя обновлены/изменены.
 10:02:25,205  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
 10:02:25,271  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-10:02:25,272  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+10:02:25,272  INFO JDBC.JDBCutil.JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -73,7 +73,7 @@
 10:02:25,318  INFO CustomerDAOJDBC:147 - Запись успешно удалена
 10:02:25,318  INFO ConnectionManager:21 - Соединение с базой данных успешно создано.
 10:02:25,355  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
-10:02:25,355  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+10:02:25,355  INFO JDBC.JDBCutil.JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
 , Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
@@ -81,9 +81,243 @@
 , Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
 ]
 23:30:36,288  INFO CustomerDAOJDBC:39 - Вывод в консоль информации о всех способах оплаты
-23:30:36,293  INFO JDBCRunner:40 - [DAO.DataBaseClasses.Payment@3a6bb9bf, DAO.DataBaseClasses.Payment@34f7cfd9, DAO.DataBaseClasses.Payment@65f095f8, DAO.DataBaseClasses.Payment@59af0466]
+23:30:36,293  INFO JDBC.JDBCutil.JDBCRunner:40 - [JDBC.DataBaseClasses.Payment@3a6bb9bf, JDBC.DataBaseClasses.Payment@34f7cfd9, JDBC.DataBaseClasses.Payment@65f095f8, JDBC.DataBaseClasses.Payment@59af0466]
 23:31:51,717  INFO CustomerDAOJDBC:39 - Вывод в консоль информации о всех способах оплаты
-23:31:51,720  INFO JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
+23:31:51,720  INFO JDBC.JDBCutil.JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
 23:33:07,946  INFO CustomerDAOJDBC:28 - Соединение с базой данных успешно создано.
 23:33:07,953  INFO CustomerDAOJDBC:40 - Вывод в консоль информации о всех способах оплаты
-23:33:07,954  INFO JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
+23:33:07,954  INFO JDBC.JDBCutil.JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
+11:33:37,024  INFO CustomerDAOJDBC:28 - Соединение с базой данных успешно создано.
+11:33:37,037  INFO CustomerDAOJDBC:40 - Вывод в консоль информации о всех способах оплаты
+11:33:37,040  INFO JDBC.JDBCutil.JDBCRunner:40 - [Payment{methodType=''}, Payment{methodType='Наложенный платёж'}, Payment{methodType='Оплата картой'}, Payment{methodType='Рассрочка'}]
+11:34:46,183  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:34:46,216  INFO JDBC.JDBCutil.JDBCRunner:20 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:34:46,282  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+11:34:46,290  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+11:34:46,290  INFO JDBC.JDBCutil.JDBCRunner:23 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+11:34:46,348  INFO CustomerDAOJDBC:92 - Соединение с базой данных успешно создано.
+11:34:46,428  INFO CustomerDAOJDBC:107 - Добавлен покупатель
+11:34:46,491  INFO CustomerDAOJDBC:120 - Соединение с базой данных успешно создано.
+11:34:46,498  INFO CustomerDAOJDBC:135 - Данные покупателя обновлены/изменены.
+11:34:46,574  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:34:46,575  INFO JDBC.JDBCutil.JDBCRunner:33 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:34:46,614  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+11:34:46,618  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+11:34:46,756  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:34:46,760  INFO JDBC.JDBCutil.JDBCRunner:37 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:35:48,454  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+11:35:48,473  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+11:35:48,537  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:35:48,565  INFO JDBC.JDBCutil.JDBCRunner:37 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=5, name='Frank', surname='Samul', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:36:02,798  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+11:36:02,825  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+11:36:02,961  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:36:03,038  INFO JDBC.JDBCutil.JDBCRunner:37 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+]
+11:39:46,137  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:39:46,166  INFO JDBC.JDBCutil.JDBCRunner:20 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+]
+11:39:46,221  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+11:39:46,224  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+11:39:46,225  INFO JDBC.JDBCutil.JDBCRunner:23 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+11:39:46,271  INFO CustomerDAOJDBC:92 - Соединение с базой данных успешно создано.
+11:39:46,289  INFO CustomerDAOJDBC:107 - Добавлен покупатель
+11:39:46,328  INFO CustomerDAOJDBC:120 - Соединение с базой данных успешно создано.
+11:39:46,331  INFO CustomerDAOJDBC:135 - Данные покупателя обновлены/изменены.
+11:39:46,394  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:39:46,396  INFO JDBC.JDBCutil.JDBCRunner:33 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:39:46,486  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+11:39:46,491  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+11:39:46,535  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:39:46,536  INFO JDBC.JDBCutil.JDBCRunner:37 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:07:34,365  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:07:34,393  INFO JDBC.JDBCutil.JDBCRunner:17 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:07:34,466  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+06:07:34,472  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+06:07:34,473  INFO JDBC.JDBCutil.JDBCRunner:20 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+06:07:34,517  INFO CustomerDAOJDBC:92 - Соединение с базой данных успешно создано.
+06:07:34,544  INFO CustomerDAOJDBC:107 - Добавлен покупатель
+06:07:34,586  INFO CustomerDAOJDBC:120 - Соединение с базой данных успешно создано.
+06:07:34,597  INFO CustomerDAOJDBC:135 - Данные покупателя обновлены/изменены.
+06:07:34,652  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:07:34,653  INFO JDBC.JDBCutil.JDBCRunner:30 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:07:34,691  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+06:07:34,696  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+06:07:34,731  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:07:34,731  INFO JDBC.JDBCutil.JDBCRunner:34 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:10:46,028  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:10:46,051  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:10:46,102  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+06:10:46,108  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+06:10:46,109  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+06:10:46,143  INFO CustomerDAOJDBC:92 - Соединение с базой данных успешно создано.
+06:10:46,160  INFO CustomerDAOJDBC:107 - Добавлен покупатель
+06:10:46,195  INFO CustomerDAOJDBC:120 - Соединение с базой данных успешно создано.
+06:10:46,199  INFO CustomerDAOJDBC:135 - Данные покупателя обновлены/изменены.
+06:10:46,243  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:10:46,244  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+06:10:46,277  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+06:10:46,283  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+06:10:46,321  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+06:10:46,321  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:21:12,297  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:21:12,331  INFO JDBCRunner:19 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:21:12,403  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+11:21:12,411  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+11:21:12,412  INFO JDBCRunner:22 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+11:21:12,454  INFO CustomerDAOJDBC:92 - Соединение с базой данных успешно создано.
+11:21:12,475  INFO CustomerDAOJDBC:107 - Добавлен покупатель
+11:21:12,519  INFO CustomerDAOJDBC:120 - Соединение с базой данных успешно создано.
+11:21:12,525  INFO CustomerDAOJDBC:135 - Данные покупателя обновлены/изменены.
+11:21:12,585  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:21:12,585  INFO JDBCRunner:32 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=8, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+11:21:12,632  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+11:21:12,637  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+11:21:12,679  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+11:21:12,680  INFO JDBCRunner:36 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=8, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+]
+13:19:10,186 ERROR HibernateUtil:52 - Создание SessionFactory не удалосьorg.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+22:49:52,010  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+22:49:52,054  INFO JDBCRunner:18 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=3, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=4, name='Анастасия', surname='Иванова', phoneNumber=233336366, eMail='фломдф', login='амдфрм', password='ке987676', cartNumber=66, adress='Одесса'}
+, Customer{id=6, name='Frank8', surname='Samul8', phoneNumber=1221122121, eMail='fff@fff.com', login='testlogin', password='test password', cartNumber=6363, adress='test adress'}
+, Customer{id=7, name='hibernate customer', surname='update', phoneNumber=85196805, eMail='+', login='+', password='+', cartNumber=12, adress='-'}
+]
+22:49:52,139  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+22:49:52,147  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+22:49:52,147  INFO JDBCRunner:21 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+22:49:52,195  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:49:52,215  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:49:52,285  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:49:52,290  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:49:52,337  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:49:52,346  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:49:52,398  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:49:52,407  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:49:52,467  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+22:49:52,468  INFO JDBCRunner:38 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=7, name='hibernate customer', surname='update', phoneNumber=85196805, eMail='+', login='+', password='+', cartNumber=12, adress='-'}
+]
+22:50:43,935  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+22:50:43,980  INFO JDBCRunner:18 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=7, name='hibernate customer', surname='update', phoneNumber=85196805, eMail='+', login='+', password='+', cartNumber=12, adress='-'}
+]
+22:50:44,083  INFO CustomerDAOJDBC:62 - Соединение с базой данных успешно создано.
+22:50:44,090  INFO CustomerDAOJDBC:78 - Вывод покупателя по заданному ID
+22:50:44,091  INFO JDBCRunner:21 - Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+
+22:50:44,151  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:50:44,164  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:50:44,220  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:50:44,228  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:50:44,274  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:50:44,280  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:50:44,344  INFO CustomerDAOJDBC:146 - Соединение с базой данных успешно создано.
+22:50:44,351  INFO CustomerDAOJDBC:151 - Запись успешно удалена
+22:50:44,438  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+22:50:44,439  INFO JDBCRunner:38 - [Customer{id=1, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+, Customer{id=2, name='UpdateName', surname='UpdateSurname', phoneNumber=7890, eMail='Update_email', login='updateLogin', password='update password', cartNumber=438934498, adress='updateadress'}
+]
+22:58:14,702  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+22:59:08,799  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+23:08:40,789  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+23:10:18,626  INFO CustomerDAOJDBC:48 - Вывод в консоль информации о всех покупателях
+23:14:59,078  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+23:16:20,819  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+15:08:45,542  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях
+15:09:08,791  INFO CustomerDAOJDBC:47 - Вывод в консоль информации о всех покупателях

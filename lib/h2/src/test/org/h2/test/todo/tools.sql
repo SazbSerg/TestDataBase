@@ -6,7 +6,7 @@
 
 -- TO_DATE
 create alias TO_DATE as $$
-java.util.Date toDate(String s) throws Exception {
+java.JDBC.JDBCutil.Date toDate(String s) throws Exception {
     return new java.text.SimpleDateFormat("yyyy.MM.dd").parse(s);
 }
 $$;
@@ -53,7 +53,7 @@ DROP ALIAS ENC;
 DROP ALIAS DEC;
 CREATE ALIAS ENC AS $$
 import org.h2.security.*;
-import org.h2.util.*;
+import org.h2.JDBC.JDBCutil.*;
 @CODE
 String encrypt(String data, String key) throws Exception {
     byte[] k = new SHA256().getHash(key.getBytes("UTF-8"), false);
@@ -68,7 +68,7 @@ String encrypt(String data, String key) throws Exception {
 $$;
 CREATE ALIAS DEC AS $$
 import org.h2.security.*;
-import org.h2.util.*;
+import org.h2.JDBC.JDBCutil.*;
 @CODE
 String decrypt(String data, String key) throws Exception {
     byte[] k = new SHA256().getHash(key.getBytes("UTF-8"), false);

@@ -543,7 +543,7 @@ INSERT INTO TEST
 A very simple Java profiler is built-in. To use it, use the following template:
 </p>
 <pre>
-import org.h2.util.Profiler;
+import org.h2.JDBC.JDBCutil.Profiler;
 Profiler prof = new Profiler();
 prof.startCollecting();
 // .... some long running process, at least a few seconds

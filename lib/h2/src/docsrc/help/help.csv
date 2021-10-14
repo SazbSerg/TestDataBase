@@ -3397,8 +3397,8 @@ If your time zone had LMT (local mean time) in the past and you use such old dat
 don't use ""java.sql.Date"" to read and write them.
 
 If you deal with very old dates (before 1582-10-15) note that ""java.sql.Date"" uses a mixed Julian/Gregorian calendar,
-""java.util.GregorianCalendar"" can be configured to proleptic Gregorian with
-""setGregorianChange(new java.util.Date(Long.MIN_VALUE))"" and used to read or write fields of dates.
+""java.JDBC.JDBCutil.GregorianCalendar"" can be configured to proleptic Gregorian with
+""setGregorianChange(new java.JDBC.JDBCutil.Date(Long.MIN_VALUE))"" and used to read or write fields of dates.
 ","
 DATE
 "
@@ -3416,16 +3416,16 @@ It cannot distinguish timestamps near transitions from DST to normal time.
 For absolute timestamps use the [TIMESTAMP WITH TIME ZONE](https://h2database.com/html/datatypes.html#timestamp_with_time_zone_type) data type instead.
 
 See also [timestamp](https://h2database.com/html/grammar.html#timestamp) literal grammar.
-Mapped to ""java.sql.Timestamp"" (""java.util.Date"" may be used too).
+Mapped to ""java.sql.Timestamp"" (""java.JDBC.JDBCutil.Date"" may be used too).
 ""java.time.LocalDateTime"" is also supported and recommended on Java 8 and later versions.
 
 If your time zone had LMT (local mean time) in the past and you use such old dates
 (depends on the time zone, usually 100 or more years ago),
-don't use ""java.sql.Timestamp"" and ""java.util.Date"" to read and write them.
+don't use ""java.sql.Timestamp"" and ""java.JDBC.JDBCutil.Date"" to read and write them.
 
-If you deal with very old dates (before 1582-10-15) note that ""java.sql.Timestamp"" and ""java.util.Date""
-use a mixed Julian/Gregorian calendar, ""java.util.GregorianCalendar"" can be configured to proleptic Gregorian with
-""setGregorianChange(new java.util.Date(Long.MIN_VALUE))"" and used to read or write fields of timestamps.
+If you deal with very old dates (before 1582-10-15) note that ""java.sql.Timestamp"" and ""java.JDBC.JDBCutil.Date""
+use a mixed Julian/Gregorian calendar, ""java.JDBC.JDBCutil.GregorianCalendar"" can be configured to proleptic Gregorian with
+""setGregorianChange(new java.JDBC.JDBCutil.Date(Long.MIN_VALUE))"" and used to read or write fields of timestamps.
 
 Cast from higher fractional seconds precision to lower fractional seconds precision performs round half up.
 ","
@@ -3584,15 +3584,15 @@ UUID
 ","
 Universally unique identifier. This is a 128 bit value.
 To store values, use ""PreparedStatement.setBytes"",
-""setString"", or ""setObject(uuid)"" (where ""uuid"" is a ""java.util.UUID"").
-""ResultSet.getObject"" will return a ""java.util.UUID"".
+""setString"", or ""setObject(uuid)"" (where ""uuid"" is a ""java.JDBC.JDBCutil.UUID"").
+""ResultSet.getObject"" will return a ""java.JDBC.JDBCutil.UUID"".
 
 Please note that using an index on randomly generated data will
 result on poor performance once there are millions of rows in a table.
 The reason is that the cache behavior is very bad with randomly distributed data.
 This is a problem for any database system.
 
-For details, see the documentation of ""java.util.UUID"".
+For details, see the documentation of ""java.JDBC.JDBCutil.UUID"".
 ","
 UUID
 "

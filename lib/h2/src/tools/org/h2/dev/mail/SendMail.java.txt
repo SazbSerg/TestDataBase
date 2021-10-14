@@ -4,7 +4,7 @@
  * Initial Developer: H2 Group
  */
 package org.h2.dev.mail;
-import java.util.Properties;
+import java.JDBC.JDBCutil.Properties;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.Message.RecipientType;

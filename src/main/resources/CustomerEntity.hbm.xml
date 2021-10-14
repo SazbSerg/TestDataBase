@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Hibernate.TestPackage.CustomerEntity" table="customer" schema="mydb">
+        <id name="idCustomer">
+            <column name="id_customer" sql-type="int"/>
+        </id>
+        <property name="customerName">
+            <column name="customer_name" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="customerSurname">
+            <column name="customer_surname" sql-type="varchar(100)" length="100"/>
+        </property>
+        <property name="phoneNumber">
+            <column name="phone_number" sql-type="int"/>
+        </property>
+        <property name="eMail">
+            <column name="e_mail" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+        <property name="login">
+            <column name="login" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(45)" length="45"/>
+        </property>
+        <property name="cardNumber">
+            <column name="card_number" sql-type="int"/>
+        </property>
+        <property name="adress">
+            <column name="adress" sql-type="varchar(45)" length="45" not-null="true"/>
+        </property>
+        <set name="ordersByIdCustomer" inverse="true">
+            <key>
+                <column name="id_customer"/>
+            </key>
+            <one-to-many not-found="ignore" class="Hibernate.TestPackage.OrdersEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>
